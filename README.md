@@ -75,8 +75,7 @@ friends_21:04:27.txt
   "username": "yomama",
   "last_login": "2020-02-27T14:16:42.201Z"
 }
+```
 You can find any friend in this list by putting their user `id` in this url:  
 https://vrchat.com/home/user/usr_81325b96-5078-487d-ba4a-ddf9a55f65bc  
 Then you can send them a friends request to re-add you.
-```
-
