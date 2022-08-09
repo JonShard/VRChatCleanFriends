@@ -1,6 +1,6 @@
 #!/bin/bash
 authCookie="authcookie_3c285f01-8d07-4819-b348-cf4e25091acb"
-cutoffDate="2022-03-10T00:00:1.000Z" # Remove all friends who haven't logged in after this date.
+cutoffDate="2021-01-1T00:00:1.000Z" # Remove all friends who haven't logged in after this date.
 
 apiKey="JlE5Jldo5Jibnk5O5hTx6XVqsJu4WJ26"
 
@@ -30,7 +30,7 @@ done
 count=$(jq .username -r friends.txt | wc -l)
 if [ "$count" == "0" ]; then
     echo "No friends to remove, all friends have been online after set cutoffDate: $cutoffDate"
-    echo "Please edit the cutoffDate in this script to change how long frinds have to have been offline for in order to be removed."
+    echo "Please edit the cutoffDate in this script to change how long friends have to have been offline for in order to be removed."
     exit 2
 fi
 
